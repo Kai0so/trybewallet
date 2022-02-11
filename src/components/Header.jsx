@@ -12,7 +12,7 @@ class Header extends React.Component {
         <span data-testid="total-field">0 </span>
         <span data-testid="header-currency-field">BRL</span>
       </>
-    )
+    );
   }
 }
 
