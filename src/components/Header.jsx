@@ -3,9 +3,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 class Header extends React.Component {
-
   updateTotalExpenses = () => {
-    const { expenseValue } = this.props
+    const { expenseValue } = this.props;
     let totalValue = 0;
     expenseValue.forEach((item) => {
       const expenseCurrency = item.currency;
@@ -38,7 +37,7 @@ Header.propTypes = {
 
 const mapStateToProps = (state) => ({
   userEmail: state.user.email,
-  expenseValue: state.wallet.expenses
+  expenseValue: state.wallet.expenses,
 });
 
 export default connect(mapStateToProps)(Header);
