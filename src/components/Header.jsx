@@ -11,7 +11,7 @@ class Header extends React.Component {
       const valueToAdd = (item.value) * (item.exchangeRates[expenseCurrency].ask);
       totalValue += valueToAdd;
     });
-    return totalValue;
+    return totalValue.toFixed(2);
   }
 
   render() {
