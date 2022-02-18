@@ -33,7 +33,7 @@ class ExpenseHeader extends React.Component {
               <td>
                 { Number(item.exchangeRates[item.currency].ask * item.value).toFixed(2)}
               </td>
-              <td>{ "Real" }</td>
+              <td>Real</td>
             </tr>
           ))}
         </tbody>
